@@ -1,0 +1,26 @@
+How would you structure a database schema to store address information for customers,
+considering that the addresses of some customers may change over time? Give pros and
+cons for each option?
+
+Trả lời:
+Có vài cách như sau:
+1. Sửa trực tiếp (overwrite) vào vị trí bản ghi cũ:
+    Ưu điểm: Dễ thực hiện, logic dễ hiểu
+    Hạn chế: Mất dữ liệu cũ, mất lịch sử
+
+2. Thêm 1 cột mới:
+    Ưu điểm: cũng dễ thực hiện, dễ hiểu
+    Hạn chế: sửa 2-3 lần còn được chứ sửa nhiều 1000 lần là thêm 1000 cột ⇒ không hợp lí.
+
+3. Thêm dòng mới
+    Ưu điểm: muốn sửa bao nhiều lần cũng được, chỉ cần thêm 1 cột như is_current_address để đánh dấu địa chỉ nào đang được dùng
+    lưu lại được các giá trị cũ
+    Nhược điểm: tốn tài nguyên
+
+4. Tạo thêm 1 bảng ghi lịch sử:
+    ưu điểm: ghi lại toàn bộ lịch sử, dễ quản lí, dễ hiểu
+    nhược điểm: tốn tài nguyên, tốn thêm thời gian truy vấn
+
+5 Phương án thêm dòng mới + thêm thời gian thay đổi, cột is_current:
+    ưu điểm: rõ ràng, dễ hiểu, lưu được lịch sử
+    nhước điểm: tốn tài nguyên, khó quản lí
