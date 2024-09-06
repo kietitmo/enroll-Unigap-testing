@@ -1,7 +1,7 @@
 import argparse
 import json
 
-def word_count(text):
+def def_word_cnt(text):
     for char in '_-.,\n!?\t)([])':
         text=text.replace(char,' ')
         text = text.lower()
@@ -29,7 +29,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('text', type=str, help='text')
 args = parser.parse_args()
 
-wordfreq= word_count(args.text)
+wordfreq= def_word_cnt(args.text)
 
 create_file(1, wordfreq)
 
