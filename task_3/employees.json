@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "department": "Engineering",
+      "salary": 75000,
+      "join_date": "2023-01-15",
+      "email": "john.doe@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "department": "Marketing",
+      "salary": 65000,
+      "join_date": "2022-05-23",
+      "email": "jane.smith@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "department": "Sales",
+      "salary": 70000,
+      "join_date": "2021-08-10",
+      "email": "alice.johnson@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "department": "Finance",
+      "salary": 80000,
+      "join_date": "2020-11-30",
+      "email": "bob.brown@example.com"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Davis",
+      "department": "Human Resources",
+      "salary": 72000,
+      "join_date": "2019-03-01",
+      "email": "charlie.davis@example.com"
+    }
+  ]
+  
