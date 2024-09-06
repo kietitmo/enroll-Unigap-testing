@@ -1,3 +1,4 @@
+-- Calculate total good amount and Count number of Order which were delivered in Sep.2019
 
 select 
     count(c.order_id) AS number_of_orders, 

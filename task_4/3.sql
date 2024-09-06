@@ -1,3 +1,5 @@
+-- From the above list of client: get information of first and second last order of client (Order date, good type, and amount)
+
 with  client_orders as (
     select
         *,
